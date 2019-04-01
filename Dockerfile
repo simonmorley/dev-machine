@@ -180,7 +180,7 @@ RUN git clone https://github.com/tmux-plugins/tmux-prefix-highlight.git ~/.tmux/
 
 RUN chsh -s /usr/bin/zsh
 
-EXPOSE 3222 60000-60010/udp
+EXPOSE 64322 60000-60010/udp
 
 WORKDIR /root
 RUN ls
