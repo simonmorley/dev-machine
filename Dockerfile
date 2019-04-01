@@ -183,5 +183,6 @@ RUN chsh -s /usr/bin/zsh
 EXPOSE 3222 60000-60010/udp
 
 WORKDIR /root
+RUN ls
 COPY entrypoint.sh /bin/entrypoint.sh
 CMD ["/bin/entrypoint.sh"]
