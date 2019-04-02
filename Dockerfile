@@ -64,6 +64,7 @@ RUN apt-get update -qq && apt-get upgrade -y && apt-get install -qq -y \
 	htop \
 	hugo \
 	ipcalc \
+        iputils-ping \
 	jq \
 	less \
 	libclang-dev \
@@ -82,6 +83,7 @@ RUN apt-get update -qq && apt-get upgrade -y && apt-get install -qq -y \
 	musl-tools \
 	ncdu \
 	netcat-openbsd \
+	net-tools \
 	openssh-server \
 	pkg-config \
 	postgresql-contrib \
