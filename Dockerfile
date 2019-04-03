@@ -153,7 +153,9 @@ ENV TERM screen-256color
 # kubectl
 COPY --from=kubectl_builder /usr/local/bin/kubectl /usr/local/bin/
 
-COPY startup.sh ."
+COPY startup.sh .
+
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # terraform tools
 COPY --from=terraform_builder /usr/local/bin/terraform /usr/local/bin/
