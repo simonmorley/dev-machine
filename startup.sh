@@ -8,4 +8,9 @@ gcloud --quiet config set container/cluster $CLUSTER_NAME
 gcloud config set compute/zone ${CLOUDSDK_COMPUTE_ZONE}
 gcloud --quiet container clusters get-credentials $CLUSTER_NAME
 
+rm ~/.ssh/git_rsa
+gsutil cp gs://dev-machine-private/git_rsa /root/
+ln -s $(pwd)/git_rsa ~/.ssh/git_rsa
+chmod 0600 ~/.ssh/git_rsa
+
 echo "done"
