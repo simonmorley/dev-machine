@@ -35,7 +35,8 @@ RUN mkdir -p /root/.vim/plugged && cd /root/.vim/plugged && \
 	git clone 'https://github.com/tpope/vim-fugitive' && \
 	git clone 'https://github.com/tpope/vim-repeat' && \
 	git clone 'https://github.com/tpope/vim-scriptease' && \
-	git clone 'https://github.com/ervandew/supertab'
+	git clone 'https://github.com/ervandew/supertab' && \
+        git clone 'https://github.com/altercation/vim-colors-solarized.git'
 
 # base OS
 FROM ubuntu:18.10
