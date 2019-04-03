@@ -11,6 +11,9 @@ fi
 cd ~/code/dotfiles 
 git remote set-url origin git@github.com:simonmorley/dotfiles.git
 
+rm -rf ~/.zshrc
+rm -rf ~/.vimrc
+
 ln -s $(pwd)/vimrc ~/.vimrc
 ln -s $(pwd)/zshrc ~/.zshrc
 ln -s $(pwd)/tmuxconf ~/.tmux.conf
