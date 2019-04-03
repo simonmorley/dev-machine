@@ -159,7 +159,7 @@ COPY startup.sh .
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # terraform tools
-COPY --from=terraform_builder /usr/local/bin/terraform /usr/local/bin/
+# COPY --from=terraform_builder /usr/local/bin/terraform /usr/local/bin/
 
 # # protobuf tools
 # COPY --from=protobuf_builder /usr/local/bin/protoc /usr/local/bin/
