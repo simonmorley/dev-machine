@@ -153,8 +153,10 @@ ENV TERM screen-256color
 # kubectl
 COPY --from=kubectl_builder /usr/local/bin/kubectl /usr/local/bin/
 
+COPY startup.sh ."
+
 # terraform tools
-# COPY --from=terraform_builder /usr/local/bin/terraform /usr/local/bin/
+COPY --from=terraform_builder /usr/local/bin/terraform /usr/local/bin/
 
 # # protobuf tools
 # COPY --from=protobuf_builder /usr/local/bin/protoc /usr/local/bin/
