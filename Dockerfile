@@ -155,6 +155,7 @@ COPY --from=kubectl_builder /usr/local/bin/kubectl /usr/local/bin/
 
 COPY startup.sh .
 
+# Oh my
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # terraform tools

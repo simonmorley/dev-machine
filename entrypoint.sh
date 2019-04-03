@@ -15,5 +15,6 @@ ln -s $(pwd)/vimrc ~/.vimrc
 ln -s $(pwd)/zshrc ~/.zshrc
 ln -s $(pwd)/tmuxconf ~/.tmux.conf
 ln -s $(pwd)/gitconfig ~/.gitconfig
+ln -s $(pwd)/sshconfig ~/.ssh/config
 
 /usr/sbin/sshd -D
