@@ -38,6 +38,9 @@ RUN mkdir -p /root/.vim/plugged && cd /root/.vim/plugged && \
 	git clone 'https://github.com/ervandew/supertab' && \
         git clone 'https://github.com/altercation/vim-colors-solarized.git'
 
+# NodeJS repo
+RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
 # base OS
 FROM ubuntu:18.10
 ENV DEBIAN_FRONTEND=noninteractive
@@ -85,6 +88,8 @@ RUN apt-get update -qq && apt-get upgrade -y && apt-get install -qq -y \
 	ncdu \
 	netcat-openbsd \
 	net-tools \
+	nodejs \
+	npm \
 	openssh-server \
 	pkg-config \
 	postgresql-contrib \
