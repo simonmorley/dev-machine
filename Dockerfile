@@ -36,7 +36,8 @@ RUN mkdir -p /root/.vim/plugged && cd /root/.vim/plugged && \
 	git clone 'https://github.com/tpope/vim-repeat' && \
 	git clone 'https://github.com/tpope/vim-scriptease' && \
 	git clone 'https://github.com/ervandew/supertab' && \
-        git clone 'https://github.com/altercation/vim-colors-solarized.git'
+        git clone 'https://github.com/altercation/vim-colors-solarized.git' && \
+	git clone 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
 # NodeJS repo
 RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
